@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Montserrat:wght@100;200;300;400;500;600;700;900&family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+*, html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    background-color: #00afff;
+    padding: 1em 2em;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.kotak {
+    display: flex;
+    flex: 1;
+    gap: 1em;
+    padding: 1em;
+}
+
+.kiri, .kanan {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1em;
+}
+
+.kiri {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.kiri select, .kiri button {
+    padding: 0.75em;
+    border-radius: 4px;
+    border: none;
+    font-size: 1em;
+    font-weight: 600;
+    color: #fff;
+    background-color: #00afff;
+    cursor: pointer;
+}
+
+.belanja {
+    flex: 1;
+    overflow-y: auto;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.barang {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    border-bottom: 1px solid #ddd;
+}
+
+.barang:last-child {
+    border-bottom: none;
+}
+
+.jajan {
+    padding: 1em;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.jajan .pay {
+    font-weight: 700;
+    font-size: 1.25em;
+}
+
+.kanan {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.kanan nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em 1em;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.kanan nav .nav_kanan {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.kanan section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1em;
+    padding: 1em;
+    overflow-y: auto;
+}
+
+.kanan section .isi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.kanan section .isi:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.kanan section .isi img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 0.5em;
+    border-radius: 8px;
+}
+
+.kanan section .isi p {
+    font-size: 1em;
+    margin-bottom: 0.5em;
+    font-weight: 500;
+    color: #555;
+}
+
+.kanan section .isi h1 {
+    font-size: 1.25em;
+    color: #00afff;
+}
+
+.payment {
+    background-color: #00afff;
+    padding: 1em 2em;
+    text-align: end;
+}
+
+.payment button {
+    padding: 0.75em 2em;
+    background-color: #fff;
+    color: #00afff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.25em;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #00afff;
+    padding: 1em;
+    color: #fff;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .kotak {
+        flex-direction: column;
+    }
+
+    .kiri, .kanan {
+        width: 100%;
+    }
+}

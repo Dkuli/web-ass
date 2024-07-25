@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbhak</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h2>Starbhak Mart</h2>
+        </header>
+
+        <div class="kotak">
+            <div class="kiri" id="section-to-print">
+                <select class="satu">
+                    <option hidden>Pilih Jenis Pemesanan</option>
+                    <option>Take Away</option>
+                    <option>Delivery</option>
+                </select>
+                <button class="dua">bang Jay</button>
+
+                <div class="belanja">
+                    <div class="barang" style="display: none;">
+                        <div class="detail-kiri">
+                            <p id="nama-barang" style="font-size: small; font-weight: 500;"></p>
+                            <p id="harga-satuan" style="text-align: right; font-size: small;"></p>
+                        </div>
+                        <div class="detail-kanan">
+                            <p class="normal">Unit Price : <span id="harga-banyak"></span></p>
+                            <p class="normal" style="display: flex; justify-content: space-between; gap: 4em;">
+                                Quantity : <span class="stock" id="stok-${itemName}"></span>
+                            </p>
+                        </div>
+                        <button id="remove">
+                            <span class="material-symbols-outlined" id="hapus">delete</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="jajan" id="section-to-print">
+                    <p>Discount : </p>
+                    <p id="totalPrice" style="display: none;"></p>
+                    <p style="display: flex; justify-content: space-between;">Tax : <span id="taxDiscount">0</span></p>
+                    <div class="pay">
+                        <p>Total Amount : </p>
+                        <p id="totalAmount">0</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="kanan">
+                <nav>
+                    <div class="nav_kiri">
+                        <p>Item List</p>
+                    </div>
+                    <div class="nav_kanan">
+                        <div class="cari">
+                            <span class="material-symbols-outlined" id="searchIcon">search</span>
+                            <input type="text" id="searchInput" placeholder="search" style="display: none;">
+                        </div>
+                        <span class="material-symbols-outlined">more_vert</span>
+                        <span class="material-symbols-outlined" id="sortByName">swap_vert</span>
+                    </div>
+                </nav>
+
+                <section>
+
+                    <!-- 1 -->
+                    <div class="isi">
+                        <div class="foto">
+                            <img src="images/Cireng isi Homemade.jpg" alt="">
+                        </div>
+                        <p>cireng</p>
+                        <h1>Rp. 3.000</h1>
+                    </div>
+
+                    <!-- 2 -->
+                    <div class="isi">
+                        <div class="foto">
+                            <img src="images/Batagor.jpg" alt="">
+                        </div>
+                        <p>batagor</p>
+                        <h1>Rp. 15.000</h1>
+                    </div>
+
+                    <!-- 3 -->
+                    <div class="isi">
+                        <div class="foto">
+                            <img src="images/Kalau pas ujan-ujan ngebakso gini nih yg mantep😍.jpg" alt="">
+                        </div>
+                        <p>bakso</p>
+                        <h1>Rp. 5.000</h1>
+                    </div>
+
+                    <!-- 4 -->
+                    <div class="isi">
+                        <div class="foto">
+                            <img src="images/Easy Nasi Goreng _ Indonesian Fried Rice.jpg" alt="">
+                        </div>
+                        <p>nasi goreng</p>
+                        <h1>Rp. 10.000</h1>
+                    </div>
+
+                    <!-- 5 -->
+                    <div class="isi">
+                        <div class="foto">
+                            <img src="images/Siu Mai (Shumai) - Chinese steamed dumplings.jpg" alt="">
+                        </div>
+                        <p>siomay</p>
+                        <h1>Rp. 15.000</h1>
+                    </div>
+
+                    <!-- 6 -->
+                    <div class="isi">
+                        <div class="foto">
+                            <img src="images/SKINNYASIA_ Mi Goreng.jpg" alt="">
+                        </div>
+                        <p>mi goreng</p>
+                        <h1>Rp. 2.000</h1>
+                    </div>
+
+                    <!-- 7 -->
+                    <div class="isi">
+                        <div class="foto">
+                            <img src="images/nasi uduk.jpg" alt="">
+                        </div>
+                        <p>nasi uduk</p>
+                        <h1>Rp. 12.000</h1>
+                    </div>
+
+                    <!-- 8 -->
+                    <div class="isi">
+                        <div class="foto">
+                            <img src="images/Resep Makaroni Pedas Yang Bisa Anda Coba Membuatnya.jpg" alt="">
+                        </div>
+                        <p>makaroni</p>
+                        <h1>Rp. 8.000</h1>
+                    </div>
+
+                    <!-- 9 -->
+                    <div class="isi">
+                        <div class="foto">
+                            <img src="images/Jangan lupa minum aqua ygy😁✨.jpg" alt="">
+                        </div>
+                        <p>akua</p>
+                        <h1>Rp. 20.000</h1>
+                    </div>
+
+                    <!-- 10 -->
+                    <div class="isi">
+                        <div class="foto">
+                            <img src="images/31 Easy Dinner Ideas for Tonight.jpg" alt="">
+                        </div>
+                        <p>burger</p>
+                        <h1>Rp. 18.000</h1>
+                    </div>
+
+                    <!-- 11 -->
+                    <div class="isi">
+                        <div class="foto">
+                            <img src="images/Merry Thanksgiving.jpg" alt="">
+                        </div>
+                        <p>ayam goreng</p>
+                        <h1>Rp. 14.000</h1>
+                    </div>
+
+                    <!-- 12 -->
+                    <div class="isi">
+                        <div class="foto">
+                            <img src="images/Strawberry Ice Cream _ Home Baked Bliss.jpg" alt="">
+                        </div>
+                        <p>es krim</p>
+                        <h1>Rp. 7.000</h1>
+                    </div>
+
+                </section>
+            </div>
+        </div>
+
+        <div class="payment">
+            <button id="bayar">
+                <span class="material-symbols-outlined">shopping_cart</span>
+                <span>
+                    <p>Payment</p>
+                    <p>(CTRL + P)</p>
+                </span>
+            </button>
+        </div>
+
+        <footer>
+            <p>Ready</p>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="app.js"></script>
+    <script src="print.js"></script>
+    <script src="search.js"></script>
+</body>
+
+</html>
